@@ -5,12 +5,15 @@ function mayuscula(nombre) {
    // Debe devolver el mismo nombre, pero con la primera letra en mayúscula.
    // [Ejemplo]: "mario" ----> "Mario".
    // Tu código:
+   let patron = /\w\S*/g;
+  return nombre.replace(patron, (c) => c.charAt(0).toUpperCase() + c.substring(1).toLowerCase());
 }
 
 function invocarCallback(cb) {
    // Invoca/ejecuta el callback `cb`.
    // [NOTA]: no debes reotrnar nada.
    // Tu código:
+   
 }
 
 function operacionMatematica(num1, num2, cb) {
@@ -18,6 +21,7 @@ function operacionMatematica(num1, num2, cb) {
    // El callback realiza una operación matemática, por lo que necesita de los dos números.
    // Retorna el resultado del callback pasándole como parámetros los números.
    // Tu código:
+
 }
 
 function sumarArray(arrayOfNumbers, cb) {
